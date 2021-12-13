@@ -1,5 +1,4 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+===============GOOGLE FONTS===============@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -78,14 +77,13 @@ body {
   margin: 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  /*For animation dark mode*/
   transition: .4s;
 }
 
-h1, h2, h3, h4 {
+/* h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-medium);
-}
+} */
 
 ul {
   list-style: none;
@@ -95,7 +93,7 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
 }
@@ -104,11 +102,11 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-}
+} */
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
+/* body.dark-theme {
   --first-color: hsl(31, 76%, 74%);
   --button-color: hsl(0, 0%, 24%);
   --button-color-alt: hsl(0, 0%, 28%);
@@ -120,17 +118,17 @@ body.dark-theme {
 }
 
 /*========== Button Dark/Light ==========*/
-.change-theme {
+/* .change-theme {
   color: var(--title-color);
   font-size: 1.25rem;
   cursor: pointer;
-}
+}  */
 
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
-.dark-theme .change-theme,
+/* .dark-theme .change-theme,
 .dark-theme .nav__toggle,
 .dark-theme .nav__shop,
 .dark-theme .button--gray {
@@ -149,10 +147,10 @@ body.dark-theme {
 
 .dark-theme::-webkit-scrollbar {
   background: hsl(0, 0%, 30%);
-}
+} */
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+/* .container {
   max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -189,11 +187,277 @@ body.dark-theme {
   width: 67px;
   height: 1px;
   background-color: var(--first-color);
-}
+} */
 
 /*=============== section-One ===============*/
-#section_one{
-     background-color: var(--first-color);
-     width: 100%;
-     height: 100vh;
+#section_one {
+  width: 100%;
+  height: auto;
 }
+
+.father {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.div-one {
+  width: 27%;
+  height: auto;
+  box-shadow: -0px -0px 15px 0px rgb(218, 218, 218);
+}
+
+.div-cointner {
+  width: 100%;
+  height: auto;
+  padding: 13px 20px;
+}
+
+.div-cointner h2 {
+  font-family: Arial;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.div-cointner ul li {
+  background-color: whitesmoke;
+  border-radius: 3%;
+  padding: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  border: none;
+}
+
+.div-cointner ul li:hover {
+  background-color: white;
+}
+
+.div-cointner ul li:nth-child(1) {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.div-cointner ul li:nth-child(4) {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+
+.div-cointner ul li i, input {
+  float: right;
+  padding: 1%;
+}
+
+/*========== icons ==============*/
+.fa-check-circle {
+  color: rgb(20, 199, 20);
+  cursor: pointer;
+}
+
+.fa-trash {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-check-circle:hover {
+  color: green;
+}
+
+.fa-trash:hover {
+  color: tomato;
+}
+
+/*========== icons ============= */
+
+.div-cointner input {
+  background-color: whitesmoke;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  text-align: left;
+  width: 42%;
+  padding: 3%;
+  border-radius: 17px;
+  transform: translateX(-20px);
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.style {
+  padding: 14px 20px;
+}
+
+.div-one .span-one {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div-one .span-one i {
+  font-size: 27px;
+  padding-right: 15px;
+
+}
+
+.count {
+  font-size: 17px;
+  opacity: 0.4;
+  padding-top: 12.1px;
+  float: right;
+  font-family: sans-serif;
+}
+
+/*======================== section-One ====================*/
+.div-two {
+  width: 70%;
+  height: 50vh;
+}
+
+.two-header {
+  padding: 20px 20px;
+}
+
+.two-header i {
+  padding-top: 1%;
+  font-size: 30px;
+  color: green;
+}
+
+.div-two .two-header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.div-two .fa-search {
+  font-size: 24px;
+  position: relative;
+  top: 10%;
+  left: 4%;
+}
+
+.div-two input {
+  opacity: 0.4;
+  width: 98%;
+  padding: 10px;
+  padding-left: 6%;
+  outline: none;
+  border-radius: 45px;
+  margin-bottom: 2%;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(218, 218, 218);
+
+}
+
+.selection {
+  display: flex;
+  width: 100%;
+  padding: 7px 30px;
+  /* background-color: rgb(255, 0, 0); */
+  justify-content: space-between;
+}
+
+.radio {
+  padding: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.radio input[type="checkbox"]:checked {
+  background-color: red;
+}
+
+.radio label {
+  font-size: 14px;
+}
+
+.radio .fa-check-circle {
+  font-size: 22px;
+  transform: translateY(2px);
+}
+
+.btns button {
+  background-color: green;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.two-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+}
+
+.space-bt .spam {
+  /* background-color: red; */
+  font-size: 17px;
+  position: relative;
+  top: 10px;
+  right: 0%;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-right: 5px;
+  background-color: green;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.space-bt .fa-dot-circle {
+  font-size: 12px;
+  border-radius: 50px;
+  padding-left: 3px;
+}
+
+.space-bt {
+  margin-top: 2%;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.space-bt .fa-plus-circle {
+  font-size: 22px;
+  position: relative;
+  top: 13px;
+  right: 0%;
+  cursor: pointer;
+}
+
+.img i {
+  transform: translateY(-15.5px);
+  font-size: 20px;
+}
+
+.img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+.space-bt {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin-left: 20px;
+}
+
+.prof {
+  /* background-color: red; */
+  margin-left: 7px;
+}
+
+.prof h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.prof p {}
